@@ -1,0 +1,27 @@
+<div class="p-4 max-w-sm mx-auto">
+  <h1 class="text-xl font-bold mb-4">Register</h1>
+  <input
+    class="mb-2 w-full p-2 border"
+    [(ngModel)]="username"
+    placeholder="Username"
+  />
+  <input
+    class="mb-2 w-full p-2 border"
+    [(ngModel)]="email"
+    placeholder="Email"
+  />
+  <input
+    class="mb-2 w-full p-2 border"
+    type="password"
+    [(ngModel)]="password"
+    placeholder="Password"
+  />
+  <button class="w-full bg-blue-500 text-white p-2" (click)="register()">
+    Register
+  </button>
+
+  <p class="text-center text-sm">
+    If you have an account?
+    <a routerLink="/login" class="text-blue-600 underline">Login</a>
+  </p>
+</div>

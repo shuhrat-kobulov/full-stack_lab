@@ -1,0 +1,22 @@
+<div class="p-4 max-w-sm mx-auto">
+  <h1 class="text-xl font-bold mb-4">Login</h1>
+  <input
+    class="mb-2 w-full p-2 border"
+    [(ngModel)]="email"
+    placeholder="Email"
+  />
+  <input
+    class="mb-2 w-full p-2 border"
+    type="password"
+    [(ngModel)]="password"
+    placeholder="Password"
+  />
+  <button class="w-full bg-blue-500 text-white p-2" (click)="login()">
+    Login
+  </button>
+
+  <p class="text-center text-sm">
+    Don't have an account?
+    <a routerLink="/register" class="text-blue-600 underline">Register</a>
+  </p>
+</div>
